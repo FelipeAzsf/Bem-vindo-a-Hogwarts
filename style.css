@@ -11,9 +11,10 @@ body{
 	"header header"
 	"aside main"
 	"footer footer";
-	grid-template-columns: 100px 1fr;
-	grid-template-rows: 80px 1fr 40px;
+	grid-template-columns: 10% 1fr;
+	grid-template-rows: 10% 100% 1fr;
 	background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+
 
 }
 
@@ -23,7 +24,7 @@ header{
 	background: radial-gradient(circle at 10.6% 22.1%, rgb(206, 18, 18) 0%, rgb(122, 21, 21) 100.7%);
 	display: flex;
 	justify-content: space-between;
-	padding-top: 15px;
+	padding-top: 10px;
 
 }
 
@@ -37,8 +38,9 @@ main{
 aside{
 	grid-area: aside;
 	height: 100%;
-	ackground: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-	padding-rigth: 20px;
+	background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+	padding-right: 20px;
+
 
 
 
@@ -54,63 +56,93 @@ a{
 	color: rgb(220,220,220);
 }
 
-h3{
-	width: 250px;
-	height: 100px;
-	padding-left: 10px;
-	padding-top: 10px;
-
+h3, p{
+	color: white;
 }
+
 
 
 .icons-top{
 	height: 50px;
 	width: 50px;
 	margin: 0 10px;
+	
 }
 
 .list-nav{
 
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	padding-top: 20px;
-	margin-bottom: 50px;
-	margin-right: 15px;
-	justify-content: space-between;
-	color: rgb(220,220,220);
+list-style-type: none;
+width: 10%;
+
 
 }
 
 .list-position{
-	width: 100px;
-	height: 80px;
-
-
-	
-
+	height: 10%;
+	margin-top: 50%;
 
 }
 
-.conteudo-box-text{
-	width: 45%;
+ .conteudo-box-text{
+	width: 50%;
 	height: 40%;
-	overflow-wrap: break-word;
 	color: rgb(211,211,211);
-	margin: 30px;
-	padding-bottom: 60px;
-	padding-left: 15px;
-	padding-right: 10px;
+	margin: 4%;
 	border: solid red 1px;
 	background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%);
-	box-sizing: content-box;
+
+
 }
 
-.foto-box{
-	width: 90%;
+.texto-conteudo{
+	word-break: break-all;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	padding: 2%;
+	text-align: justify;
+
+}
+
+.conteudo-video{
+	width: 63%;
 	height: 40%;
-	align-content: center;
-
+	position: absolute;
+	top: 390px;
+	left: 300px;
+	box-shadow: 1px 1px 20px 10px rgb(194, 0, 0);	
 }
 
+.move-abaixo{
 
+	position: absolute;
+	top: 500px;
+}
+
+.conteudo-persona{
+	width: 100%;
+	height: 90%;
+	background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+	position: absolute;
+	top: 660px;
+	right: 1px;	
+	display: flex;
+	
+}
+
+.conteudo-imag-persona{
+	display: flex;
+	width: 300px;
+	height: 300px;
+	margin: 15px; 
+	
+}
+
+.gif-position{
+	position: absolute;
+	top:400px;
+	right: 400px;
+	width: 500px;
+	height: 300px;
+	box-shadow: 1px 1px 20px 5px rgb(194, 0, 0);
+}
